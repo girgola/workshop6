@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+    font-stile: Roboto-Regular;
+}
+body{
+    font-family: Roboto;
+    width: 100%;
+    /* margin-top: 50px; */
+
+}
+header{
+    width: 100%;
+    height: 94px;
+    background-color: #000000;
+    padding: 12px;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    margin-bottom: 50px;
+}
+header h1{
+    height: 70px;
+    width: 70px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 100px ;
+    text-indent: -700px;
+    float: left;
+
+    
+}
+header h1 a{
+    height: 70px;
+    width: 70px;
+    display: block;
+    margin-right: 100px;
+    padding: 5px 10px;
+    
+}
+nav{
+    margin-left: 270px;
+    margin-top: 26px;
+    
+}
+header nav ul li{
+    float: left;
+    color: #ffffff;
+    position: relative;
+    
+
+
+}
+ul li a{
+    float: left;
+    padding: 5px 10px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    
+    
+
+}
+
+header ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    right: 50%;
+    bottom: 0;
+    transition: 2s;
+    
+
+}
+header ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    left: 50%;
+    bottom: 0;
+    transition: 2s;
+    
+
+}
+header ul li a:hover:before, header ul li a:hover::after{
+    width: 50%;
+    transition: 2s;
+    cursor: pointer;
+    
+}
+
+body{
+    width: 100%;
+}
+main{
+    position: relative;
+    
+
+}
+
+.social{
+    width: 50px;
+    height: 100px;
+    position: fixed;
+    top: 214px;
+    right: 0;
+  
+}
+.fb, .insta{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.fb a{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 214px;
+    right: 0;
+}
+.fb{
+    background-image: url(../img/fb1.png);
+}
+.fb:hover{
+    background-image: url(../img/facebook.png);
+    transition: 1s;
+    z-index: 88;
+
+}
+.insta a{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 264px;
+    right: 0;
+  
+}
+.insta{
+    background-image: url(../img/instagram1.png);
+}
+.insta:hover{
+    background-image: url(../img/instagram.png);
+    transition: 1s;
+    z-index: 88;
+
+}
+
+.Playlisti{
+    font-size: 24px;
+    margin-bottom: 50px;
+    
+}
+.Latest, .today{
+    font-size: 24px;
+    margin-top: 144px;
+    margin-left: 110px;
+    margin-bottom: 50px;
+    clear: both;
+}
+.hits{
+    float: left;
+    width: 33.33%;
+}
+article{
+    margin-left: 110px;
+    height: 244px;
+    width: 300px;
+    border: 2px solid #000000;
+    position: relative;
+    transition: 0.5s;
+
+}
+
+article:hover{
+    box-shadow: 0 0 20px #a7a1a1;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+
+.like{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/like1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 3s;
+
+    
+}
+.like:hover{
+    background-image: url(../img/like2.png);
+    cursor: pointer;
+    transition: 2s;
+}
+
+.sound{
+    
+    margin-left: 10px;
+    margin-top: 50px;
+    float: left;
+    margin-bottom: 22px;
+
+    
+}
+.text1{
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    font-weight: 400;
+
+}
+.text2{
+    font-size: 14px;
+    margin-left: 12px;
+
+}
+.go{
+    margin-top: 10px;
+    font-size: 12px;
+    margin-bottom: 50px;
+    margin-left: 110px;
+    transition: 2s;
+
+  
+}
+.go:hover{
+    text-decoration: underline;
+    transition: 2s;
+
+}
+.go a{
+
+    color: #000000;
+ 
+}
+footer{
+    background-color: #000000;
+    height: 354px;
+    width: 100%;
+    clear: both;
+}
+footer h2{
+    height: 150px;
+    width: 150px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 670px;
+    text-indent: -7000px;
+    float: left; 
+    margin-top: 28px;
+    margin-bottom: 26px;
+
+    
+}
+footer h2 a{
+    height: 150px;
+    width: 150px;
+    display: block;
+    padding: 5px 10px;
+    
+}
+footer .pe, footer p{
+    font-size: 18px;
+    clear: both;
+    /* padding: 20px; */
+    text-align: center;
+    color: #ffffff;
+    margin: 100px auto;
+
+    
+    
+}
+footer ul li a{
+    clear: both;
+    padding: 5px 10px;
+    margin-left: 690px;
+    padding: 0;
+      
+}
+footer p{
+        padding: 24px;
+
+}
+/* footer p, footer .pe{
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 26px;
+} */
+
+
+
+/*................playlists styles..............*/
+
+
+
+.song{
+    margin-left: 110px;
+    width: 22%;
+    margin-bottom: 46px;
+    float: left;  
+    margin-top: 144px;
+    text-align: center;
+
+    /* animation: periscvlileba 5s; */
+    transition: 2s;
+
+}
+/* 
+@keyframes periscvlileba {
+    0%{background-color: #E5E5E5}
+    50%{background-color: #FFFFFF}
+    100%{background-color: #E5E5E5}
+} */
+.song:hover{
+    background-color: #E5E5E5;
+    transition: 2s;
+    box-shadow: 0 0 20px #717070;
+
+}
+  
+.musicpoto{
+    width: 260px;
+    height: 64px;
+    /* width: 20%;
+    height: 100%; */
+    float: left;
+    clear: both;
+    margin-left: 590px;
+    margin-top: 140px;
+}
+.musicpoto img{
+    width: 20%;
+}
+.us{
+    font-size: 36px;
+    margin-top: 106px;
+    margin-bottom: 142px;
+    text-align: center;
+    margin-left: 600px;
+    float: left;
+    clear: both;
+}
+
+.song22{
+    margin-left: 110px;
+    float: left;
+    padding-top: 108px;
+    width: 90%;
+    clear: both;
+
+}
+.song2{
+    width: 22%;
+    margin-bottom: 46px;
+    float: left;
+    text-align: center;
+    margin-right: 20px;  
+    
+}
+.song2:hover{
+    background-color: #E5E5E5;
+    transition: 2s;
+    box-shadow: 0 0 20px #717070;
+
+}
